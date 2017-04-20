@@ -47,6 +47,7 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import io.github.douglasjunior.androidSimpleTooltip.SimpleTooltip;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -119,6 +120,15 @@ public class Cart extends AppCompatActivity {
         cart_recycler.setNestedScrollingEnabled(false);
         //cart_scrollview.setVisibility(View.VISIBLE);
         //hidecartview.setVisibility(View.GONE);
+
+        new SimpleTooltip.Builder(this)
+                .anchorView(cart_recycler)
+                .text("Click on image to view complete details!")
+                .gravity(Gravity.BOTTOM)
+                .animated(true)
+                .transparentOverlay(false)
+                .build()
+                .show();
 
        new Handler().postDelayed(new Runnable() {
            @Override

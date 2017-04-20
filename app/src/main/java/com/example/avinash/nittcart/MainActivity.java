@@ -140,6 +140,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import br.com.mauker.materialsearchview.MaterialSearchView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import io.github.douglasjunior.androidSimpleTooltip.SimpleTooltip;
 import pl.droidsonroids.gif.GifTextView;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -243,8 +244,16 @@ public class MainActivity extends AppCompatActivity
         bmb.setButtonPlaceEnum(ButtonPlaceEnum.SC_4_2);
         setBoomButton();
 
-        //TODO: send firebase_user_id to server
+        new SimpleTooltip.Builder(this)
+                .anchorView(bmb)
+                .text("Click on image to view complete details!")
+                .gravity(Gravity.END)
+                .animated(true)
+                .transparentOverlay(false)
+                .build()
+                .show();
 
+        //TODO: send firebase_user_id to server
         bmb.setOnBoomListener(new OnBoomListener() {
             @Override
             public void onClicked(final int index, final BoomButton boomButton) {

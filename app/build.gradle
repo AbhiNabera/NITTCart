@@ -40,7 +40,7 @@ dependencies {
     compile 'com.gordonwong:material-sheet-fab:1.2.1'
     compile 'com.ramotion.foldingcell:folding-cell:1.1.0'
     compile 'com.getbase:floatingactionbutton:1.10.0'
-    compile 'it.sephiroth.android.library.targettooltip:target-tooltip-library:+'
+    compile 'com.github.douglasjunior:android-simple-tooltip:0.2.0'
     compile 'com.roughike:bottom-bar:2.1.2'
     compile 'it.neokree:MaterialTabs:0.11'
     compile 'br.com.mauker.materialsearchview:materialsearchview:1.2.2'
