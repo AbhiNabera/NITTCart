@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+    android:layout_marginTop="2dp"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:background="@drawable/list_itemborder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        folding-cell:additionalFlipsCount="7"
+        android:foreground="?android:attr/selectableItemBackground"
+        folding-cell:animationDuration="1300"
+        folding-cell:backSideColor="@color/bgBackSideColor"
+        android:id="@+id/folding_cell"
+        folding-cell:cameraHeight="30">
+
+    <!-- CONTENT (UNFOLDED) LAYOUT (MUST BE AT LEAST 2x times BIGGER than content layout bellow)-->
+        <include layout="@layout/cell_content_layout" />
+
+    <!-- TITLE (FOLDED) LAYOUT (MUST BE AT LEAST 2x times SMALLER than content layout above) -->
+        <include layout="@layout/cell_title_layout" />
+
+    </com.ramotion.foldingcell.FoldingCell>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#98393739">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/cart_and_plceorder_back">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/closefilter"
+
+        android:background="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/title_from_to_dots_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/closefilter"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@color/contentDividerLine" />
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_below="@+id/title_from_to_dots_divider"
+           android:layout_alignParentStart="true"
+           android:id="@+id/linearLayout">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="138dp"
+               android:layout_height="match_parent"
+               android:gravity="center_horizontal"
+               android:weightSum="1">
+
+
+               <ImageView
+                   android:layout_width="70dp"
+                   android:layout_height="60dp"
+                   android:id="@+id/cat_button"
+                   android:src="@drawable/book"
+                   android:layout_weight="0.04" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:text="Category"
+                   android:id="@+id/textView4"
+                   android:gravity="center_horizontal"
+                   android:textSize="14dp" />
+
+               <ImageView
+                   android:layout_width="63dp"
+                   android:layout_height="54dp"
+                   android:layout_below="@+id/divider"
+                   android:id="@+id/quality_button"
+                   android:src="@drawable/ic_quality"
+                   android:layout_marginTop="15dp" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:text="Quality"
+                   android:id="@+id/textView4a"
+                   android:gravity="center_horizontal"
+                   android:textSize="14dp" />
+
+               <ImageView
+                   android:layout_width="63dp"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/divider1"
+                   android:id="@+id/price_button"
+                   android:src="@mipmap/ic_money"
+                   android:layout_weight="0.16" />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:text="Price"
+                   android:id="@+id/textView4b"
+                   android:gravity="center_horizontal"
+                   android:textSize="14dp"
+                   android:layout_marginTop="-10dp" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Donated"
+                   android:id="@+id/donate"
+                   android:checked="false" />
+
+               <ImageView
+                   android:id="@+id/divide"
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:layout_below="@id/donate"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginTop="5dp"
+                   android:src="@color/contentDividerLine" />
+
+               <LinearLayout
+                   android:orientation="vertical"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/category"
+                   android:layout_gravity="center_horizontal">
+
+                   <ScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent">
+
+                   <CheckBox
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Chemistry"
+                       android:id="@+id/chemistry"
+                       android:checked="false" />
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:layout_below="@id/chemistry"
+                       android:layout_marginBottom="5dp"
+                       android:layout_marginTop="5dp"
+                       android:src="@color/contentDividerLine" />
+
+                   <CheckBox
+                       android:layout_marginTop="10dp"
+                       android:layout_below="@+id/chemistry"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Physics"
+                       android:id="@+id/physics"
+                       android:checked="false" />
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:layout_below="@id/physics"
+                       android:layout_marginBottom="5dp"
+                       android:layout_marginTop="5dp"
+                       android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/physics"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Maths"
+                           android:id="@+id/maths"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/maths"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/maths"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="English"
+                           android:id="@+id/english"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/english"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/english"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="CSE"
+                           android:id="@+id/cse"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/cse"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/cse"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="CIVIL"
+                           android:id="@+id/civil"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/civil"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/civil"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="CHEMICAL"
+                           android:id="@+id/chemical"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/chemical"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/chemical"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="EEE"
+                           android:id="@+id/eee"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/eee"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/eee"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="ECE"
+                           android:id="@+id/ece"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/ece"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/ece"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="ICE"
+                           android:id="@+id/ice"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/ice"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/ice"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="MECH"
+                           android:id="@+id/mech"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/mech"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/mech"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="MME"
+                           android:id="@+id/mme"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/mme"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/mme"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="PROD"
+                           android:id="@+id/prod"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/prod"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_marginTop="10dp"
+                           android:layout_below="@+id/prod"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="OTHERS"
+                           android:id="@+id/others"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/others"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                   </RelativeLayout>
+
+                   </ScrollView>
+
+               </LinearLayout>
+
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:id="@+id/item_quality"
+                       android:visibility="gone"
+                       android:layout_gravity="center_horizontal">
+
+
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Good as New"
+                           android:id="@+id/good_as_new"
+                           android:checked="false" />
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/good_as_new"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Used"
+                           android:id="@+id/used"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/used"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Old"
+                           android:id="@+id/old"
+                           android:checked="false" />
+
+                       <ImageView
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:layout_below="@id/old"
+                           android:layout_marginBottom="5dp"
+                           android:layout_marginTop="5dp"
+                           android:src="@color/contentDividerLine" />
+
+                   </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        android:id="@+id/item_price">
+
+                        <me.tankery.lib.circularseekbar.CircularSeekBar
+                            android:id="@+id/seek_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            app:cs_negative_enabled="false"
+                            app:cs_circle_style="round"
+                            app:cs_circle_stroke_width="7dp"
+                            app:cs_pointer_angle="1"
+                            app:cs_pointer_alpha_ontouch = "100"
+                            app:cs_pointer_stroke_width = "20dp"
+                            app:cs_pointer_halo_width = "5dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:id="@+id/price_seekbar"
+                            android:layout_below="@+id/seek_bar"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@id/price_seekbar"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@color/contentDividerLine" />
+
+                    </RelativeLayout>
+
+           </LinearLayout>
+       </LinearLayout>
+
+       <Button
+           style="?android:attr/buttonStyleSmall"
+           android:layout_width="80dp"
+           android:layout_height="wrap_content"
+           android:text="APPLY"
+           android:id="@+id/apply"
+           android:background="@drawable/side_round_button"
+           android:layout_above="@+id/title_from_to_dots_divider"
+           android:layout_alignEnd="@+id/title_from_to_dots_divider"
+           android:gravity="center_vertical|center_horizontal"
+           android:layout_marginRight="10dp"
+           android:textStyle="bold"
+           android:textColor="#ffffff"
+           android:layout_marginTop="5dp"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp" />
+
+
+   </RelativeLayout>
+ </RelativeLayout>

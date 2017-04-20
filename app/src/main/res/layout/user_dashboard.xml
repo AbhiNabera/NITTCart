@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#98393739">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cart_and_plceorder_back">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/header"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/closecart"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_close" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="DASHBOAD"
+                    android:id="@+id/textView6"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/closecart"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    style="bold"
+                    android:textStyle="bold"
+                    android:textColor="#6bbe60" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/title_from_to_dots_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/header"
+                android:layout_marginTop="5dp"
+                android:src="@color/contentDividerLine"
+                android:layout_marginBottom="-1dp" />
+
+
+<RelativeLayout
+    android:layout_width="match_parent" android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark" android:orientation="horizontal"
+    android:id="@+id/relativeLayout3"
+    android:visibility="gone"
+    android:gravity="center_vertical|center"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center|center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/relativeLayout6">
+    <ImageView android:layout_width="100dp" android:layout_height="100dp"
+        android:src="@drawable/userdashboard" android:id="@+id/imageView"
+
+        android:paddingLeft="-50dp"
+        android:paddingRight="-50dp"
+        android:paddingBottom="-10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="245dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.54"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/relativeLayout6"
+        android:gravity="center_vertical">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="DASHBOARD"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_marginTop="42dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome 108115017"
+        android:id="@+id/roll_no_user"
+        android:layout_below="@+id/textView5"
+        android:textSize="15dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Your Posted item"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/roll_no_user"
+        android:textColor="#ffffff"
+        android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="| My Orders  "
+            android:textStyle="bold|italic"
+            android:id="@+id/my_orders"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_from_to_dots_divider">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:visibility="gone"
+            android:id="@+id/noitems"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_upload_item" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No Posted items!!"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/imageView2"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="#767676"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Post an add for your item..."
+            android:id="@+id/textView8"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Network Error!!Retry.."
+                android:id="@+id/retry"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/side_round_button"
+                android:textColor="#ffffff"
+                android:layout_marginTop="300dp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dash_recycler">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+     </RelativeLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

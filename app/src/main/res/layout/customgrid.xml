@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/customgrid"
+    android:background="@color/white"
+    android:gravity="center_vertical|center|center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:id="@+id/innercustomgrid">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/customimage"
+        android:background="@drawable/submit"
+        android:src="@drawable/book"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/customtext"
+        android:textAlignment="center"
+        android:text="poweron"
+        android:layout_below="@+id/customimage"
+        android:textStyle="bold"
+
+        android:layout_alignRight="@+id/customimage"
+        android:layout_alignEnd="@+id/customimage"
+        android:gravity="center_vertical|center|fill_vertical|center_horizontal" />
+</RelativeLayout>
+    </RelativeLayout>

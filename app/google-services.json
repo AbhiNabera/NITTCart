@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "84142023119",
+    "firebase_url": "https://nitt-cart-88363.firebaseio.com",
+    "project_id": "nitt-cart-88363",
+    "storage_bucket": "nitt-cart-88363.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84142023119:android:5eb4346f362f99f7",
+        "android_client_info": {
+          "package_name": "com.example.avinash.nittcart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84142023119-jitchrvc3ppiaih8pb1fm5lmtl7di4dl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.avinash.nittcart",
+            "certificate_hash": "e041b92fc537d80e453e1082c3bb6c2c7eb6f27f"
+          }
+        },
+        {
+          "client_id": "84142023119-l83qm3gmsnlucusb17c0pd1b48a9faqh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1m6JB40A0SpZo6j5wEgOZYqTpXJptBno"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84142023119-l83qm3gmsnlucusb17c0pd1b48a9faqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
